@@ -35,6 +35,29 @@
             text-align: center;
             border-radius: 0 0 15px 15px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);}
+        /* Right column */
+        .sidebar {
+            width: 260px;
+            background: rgb(32, 35, 35);
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 16px;
+        }
+        .sidebar h2 { margin: 0 0 10px; font-size: 1.1rem;color: #e5e7eb; }
+        .sidebar ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+        .sidebar a {
+            display: block;
+            text-decoration: none;
+            color: #f7f3f3;
+            background: #b9b7b0fa;
+            border: 1px solid #bbbcc0;
+            padding: 10px 12px;
+            border-radius: 10px;
+            transition: background .15s ease, border-color .15s ease;
+        }
+        .sidebar a:hover { background: #496986; border-color: #a7a9ac; }
+        
+        /* (Optional) make it stack neatly on small screens */
         </style>
     </head>
     <body>
@@ -49,6 +72,18 @@
             <p><strong>Email:</strong>leatilemogende@gmail.com</p>
             <p><strong>Address:</strong>Plot 123, Tlokweng, Botswana</p>
         </div>
+        <!--RIGHT: sidebar menu -->
+         <aside class="sidebar" aria-label="Main menu">
+            <h2>Menu</h2>
+             <ul>
+           <li><a href="index.html">Home</a></li>
+           <li><a href="Product page.html">Product Page</a></li>
+           <li><a href="Application Form.html">Application form</a></li>
+           <li><a href="About us.html">About MLS</a></li>
+           <li><a href="Contact Page.html">Contact</a></li>
+           <li><a href="FAQ Page.html">FAQ</a></li>  
+         </ul>
+         </aside>
         <footer>
             <p>&copy; 2025 Mogende Loan Services</p>
         </footer>
