@@ -385,8 +385,19 @@
     color: #fff;
 }
 
-.services__container .services__card:nth-of-type(2) {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('../images/master cards.jpg'); 
+.services__card--about {
+    margin: 1rem;
+    height: 525px;
+    width: 500px;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%),url('../images/money.jpg') ; 
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+
+ .services__card:nth-of-type(2) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%),url('../images/master cards.jpg'); 
 }
 
 .services h2 {
@@ -395,10 +406,33 @@
     left: 30px;
 }
 
+.services__card--about h3 {
+    left: 30px;
+    padding-left: 30px;
+    padding-top: 30px;
+    font-size: x-large;
+    font-weight: bolder;
+}
+.services__card--about h4 {
+    left: 30px;
+    padding-left: 30px;
+}
+.services__card--about h5 {
+    left: 30px;
+    padding-left: 30px;
+}
+
 .services__card p {
     position: absolute;
     top: 400px;
     left: 30px;
+}
+
+.services__card--about p {
+    padding-left: 30px;
+    font-size: larger;
+    font-weight: bolder;
+    padding-top: 15px;
 }
 
 .services__card button {
@@ -410,6 +444,19 @@
     background: #f77062;
     position: absolute;
     top: 440px;
+    left: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.services__card--about button {
+    color: #fff;
+    margin-left: 30px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #f77062;
+    position: flex;
+    top: 500px;
     left: 30px;
     font-size: 1rem;
     cursor: pointer;
@@ -545,6 +592,7 @@
 
 .website__rights {
     color: #fff;
+    align-items: center;
 }
 
 @media screen and (max-width: 820px) {
@@ -586,7 +634,112 @@
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
             left: 50px;} 
 .main__about {
-     background-image: url('images/background.jpg');
+     background-color: #141414;
      padding: 30px;
      align-items: center;
+     background-size: cover;
+     position: relative;
 }
+
+   .container { 
+            background-color: rgba(255, 255, 255, 0.9);
+            margin: 40px auto; 
+            padding: 30px; 
+            max-width: 700px; 
+            border-radius: 15px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            left: 50px;}
+          body{
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-size: cover;
+            background-position: center;
+            color: #333;
+            background-image: url(images/master\ cards.jpg);
+            background-size: 100px 100px 100px 100px;} 
+          
+         
+        /* --- Nice form layout --- */
+          form{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px 18px;
+        }
+        .full{ 
+            grid-column: 1 / -1; 
+        }
+        label{
+            display: block;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+        input, select{
+            width: 100%;
+            padding: 12px;
+            border-radius: 10px;
+            border: 1px solid #e5e7eb;
+            font-size: 15px;
+            background: #fff;
+            outline: none;
+        }
+        input:focus,select:focus{
+            border-color: #2563eb;
+            box-shadow: 0 0 0 4px rgba(37,99,235,0.15);
+        }
+        .hint{
+            display: block;
+            margin-top: 6px;
+            font-size: 12px;
+            color: #6b7280;
+        }
+        /* --- Buttons --- */
+        .actions{
+            display: flex;
+            gap: 12px;
+            justify-content: flex-end;
+            margin-top: 4px;
+        }
+        button{
+            appearance: none;
+            border: none;
+            border-radius: 10px;
+            padding: 12px 18px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        button:active{transform: translateY(1px);}
+        .btn-primary{
+            background: #2563eb;
+            color: #fff;
+            box-shadow: 0 6px rgba(37,99,235,0.25);
+        }
+        .btn-primary:hover{ background: #1e49b8; }
+        
+        .btn-ghost{
+        background: transparent;
+        color: #111827;
+        border: 1px solid #e5e7eb;
+        }
+        
+        .btn-ghost:hover{
+        background: #f8fafc;
+        }
+        
+        /* Responsive */
+        @media (max-width: 640px){
+        form{ grid-template-columns: 1fr; }
+        .actions{ justify-content: stretch; }
+        .actions button{ flex: 1; }
+        }
+            /* LEFT CONTENT AREA */
+            .content {
+                flex: 1;  
+                background-color: rgba(151, 146, 146, 0.9);
+                padding: 30px;
+                border-radius: 15px;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+            }
+            
+            
+
