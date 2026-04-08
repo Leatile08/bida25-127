@@ -634,7 +634,7 @@
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
             left: 50px;} 
 .main__about {
-     background-image: url(images/money.jpg);
+     background-image: url(../images/money.jpg);
      padding: 30px;
      align-items: center;
      background-size: cover;
