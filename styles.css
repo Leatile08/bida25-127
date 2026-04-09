@@ -651,7 +651,7 @@
             border-radius: 15px; 
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
             left: 50px;}
-          .Application__form {
+          body {
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-size: cover;
