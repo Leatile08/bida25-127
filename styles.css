@@ -374,7 +374,7 @@
     flex-wrap: wrap;
 }
 
-.services__card {
+.services__card:nth-of-type(1) {
     margin: 1rem;
     height: 525px;
     width: 400px;
